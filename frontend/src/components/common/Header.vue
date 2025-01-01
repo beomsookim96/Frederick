@@ -1,12 +1,12 @@
 <template>
   <header class="app-header">
     <div class="logo">
-      <h1>Frederick</h1>
+      <router-link to="/">
+        <img src="../../assets/logo.png">
+      </router-link>
     </div>
     <nav class="nav-links">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <router-link to="/login">login</router-link>
     </nav>
   </header>
 </template>
@@ -23,17 +23,18 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  color: #000000;
+  border: 2px solid black;
 }
 
-.logo h1 {
-  font-size: 24px;
+.logo img{
+  width : 50px;
+  height : 50px;
 }
 
 .nav-links a {
   margin: 0 10px;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 

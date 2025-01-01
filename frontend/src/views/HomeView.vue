@@ -4,7 +4,7 @@
 <template>
   <header>
     <div class="wrapper">
-      <h1>Hello!</h1>
+      <h1>HOME!</h1>
     </div>
   </header>
 </template>

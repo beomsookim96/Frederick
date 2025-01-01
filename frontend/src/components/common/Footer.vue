@@ -19,8 +19,8 @@ export default {
 
 <style scoped>
 .app-footer {
-  background-color: #222;
-  color: #fff;
+  border: 2px solid black;
+  color: #000000;
   padding: 20px 0;
   text-align: center;
 }
@@ -32,7 +32,7 @@ export default {
 
 .footer-links a {
   margin: 0 10px;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
