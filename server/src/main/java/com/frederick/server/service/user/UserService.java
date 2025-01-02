@@ -1,7 +1,7 @@
-package com.frederick.server.service;
+package com.frederick.server.service.user;
 
 import com.frederick.server.document.User;
-import com.frederick.server.repository.UserRepository;
+import com.frederick.server.repository.user.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

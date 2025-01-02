@@ -45,7 +45,6 @@ public class SecurityConfig {
                                 "/auth/test"
                         ).permitAll()
                         .anyRequest().authenticated() // 나머지 요청은 인증 필요
-//                                .anyRequest().permitAll()
                 ).addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class) // JWT 필터 추가
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // JWT 사용 시 무상태 세션
                 .httpBasic(httpBasic -> httpBasic.disable()) // HTTP Basic 비활성화

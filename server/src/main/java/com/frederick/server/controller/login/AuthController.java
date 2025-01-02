@@ -1,7 +1,7 @@
 package com.frederick.server.controller.login;
 
 import com.frederick.server.document.User;
-import com.frederick.server.service.UserService;
+import com.frederick.server.service.user.UserService;
 import com.frederick.server.utils.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package com.frederick.server.repository;
+package com.frederick.server.repository.user;
 
 import com.frederick.server.document.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
