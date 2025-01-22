@@ -19,16 +19,15 @@ public class TaskController {
 
     @PostMapping
     public ResponseEntity<Task> registerTask(@RequestBody Task task) {
-        if (task.getUserId() == null) {
-            return ResponseEntity.badRequest().body(null);
-        }
+        // task.getUserId() 제거: 서비스 계층에서 현재 사용자의 ID를 설정
         Task createdTask = taskService.registerTask(task);
         return ResponseEntity.ok(createdTask);
     }
 
-    @GetMapping("/user/{userId}")
-    public ResponseEntity<List<Task>> getTasksByUserId(@PathVariable String userId) {
-        List<Task> tasks = taskService.getTasksByUserId(userId);
+    @GetMapping
+    public ResponseEntity<List<Task>> getTasks() {
+        // 현재 사용자만 자신의 작업을 조회
+        List<Task> tasks = taskService.getTasks();
         return ResponseEntity.ok(tasks);
     }
 
